@@ -1,0 +1,33 @@
+Etapa 2
+
+	Strategia adoptata de bot este de a coloniza planetele disponibile care nu
+se afla in zona de conflict si de a fi agresiv in momentul in care adversarul
+este in proximitate.
+	In timp ce botul colonizeaza planetele verifica pentru fiecare nava daca
+are inamici in proximitate. O nava are nevoie de 5 ture complete pentru a incepe
+sa extraga resurse. Astfel, daca o nava inamica se afla la o distanta de 35
+(distanta maxima a unei nave in 5 ture) sau mai mica, nava respectiva anuleaza
+ordinul de aselenizare si se duce in schimb sa atace navele inamice.
+	Navele in momentul in care lupta au 2 roluri: de a tine frontul sau de a
+ataca productia inamica. In acest scop am folosit o variabila numita aggro care
+spune ca a aggro-a nava se duce sa atace productia adversarului. In functie de
+cat de mare este harta botul joaca mai agresiv sau mai pasiv.
+	Lupta propriu-zisa este ca fiecare nava care tine frontul sa se duca sa
+atace cea mai apropiata nava inamica, iar daca aceasta are mai putin HP decat
+nava adversa incearca sa se autodistruga in nava inamica. Navele care ataca
+productie doar ataca pur si simplu navele aselenizate ale adversarului.
+
+Imbunatatiri la componetele din etapa 1
+	Am modificat modul in care botul populeaza planetele. Acum navele se duc
+catre cea mai apropiata planeta si aselenizeaza pe ea pana cand nu mai este loc.
+De asemenea am folosit o variabila in plus pentru a putea spune navelor ca desi
+planeta nu este complet ocupata in tura respectiva, sunt suficiente nave pe
+drum pentru ca aceasta sa fie complet ocupata cateva ture mai tarziu.
+
+Etapa 3
+	Am incercat sa implementam un decoy, adica o nava care sa se plimbe prin 
+teritoriul adversarului si sa ii strice navigatia. Sounds good doesn't work.
+Decoy-ul nu functioneaza asa cum am fi vrut, dar aduce o contributie pe unele 
+harti. In rest este botul de la etapa 2 in mare.
+	
+
